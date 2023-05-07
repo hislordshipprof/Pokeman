@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 import Link from "next/link";
-import Navbar from "@/components/Global/Navbar";
 import { image } from "@/components/Global/Images";
 import { useRouter } from "next/router";
 const landingPage = () => {
