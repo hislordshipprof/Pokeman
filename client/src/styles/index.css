@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #242424;
+  font-family: "Montserrat", sans-serif;
+}
+.body {
+  background-color: "#FFFFFF";
+}
+
+.underline-link {
+  text-decoration: underline;
+}
+
+.search-container {
+  /* width: 33%; */
+  border-radius: 30px;
+  border: 2px solid #de527f;
+  padding: 7px;
+}
+.search-input:focus {
+  box-shadow: none;
+  border-radius: 0;
+  border-width: 0;
+}
+.search-input {
+  border: none;
+}
+
+.search-btn {
+  border: none;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.search-icon {
+  color: white;
+}
+
+.input-group-append .btn {
+  background-color: #de527f;
+}
+
+.navbar-brand-text {
+  color: black;
+}
+
+.navbar-brand-text span {
+  color: #de527f;
+}
+.input-group2 {
+  border-radius: 20px;
+  border: 1px solid #ced4da;
+}
+.text-pink {
+  color: #ff69b4; /* or whatever shade of pink you prefer */
+}
+
+.card-img-wrapper {
+  position: relative;
+  background-color: #f2f2f2;
+  height: 150px;
+  margin: 10px 10px 10px 10px;
+  border-radius: 10px;
+}
+
+.card-img-top {
+  position: absolute;
+  top: -34px;
+  left: -20px;
+  right: -20px;
+  bottom: 0;
+  margin: auto;
+}
+
+.modal {
+  background-color: "white" !important;
+}
+
+.modal-dialog {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.modal-content {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.my-about {
+  position: absolute;
+  width: 356px;
+  height: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 340px;
+  background: #ffffff;
+  box-shadow: 0px -28px 24px -24px rgba(0, 0, 0, 0.25);
+}
+
+.my-stats {
+  position: absolute;
+  width: 456px;
+  height: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 384px;
+  /* background: #ffffff; */
+  box-shadow: 0px -28px 24px -24px rgba(0, 0, 0, 0.25);
+}
+
+.my-stats .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  padding: 0 10px;
+}
+
+.my-stats p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.my-stats .progress {
+  height: 6px;
+  width: 100%;
+}
+
+.my-stats .progress-bar {
+  height: 100%;
+}
+.modal-header {
+  position: relative;
+}
+.modal-header .close {
+  position: absolute;
+  right: 0;
+  pointer-events: auto;
+}
+.modal-header .arrow-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 45px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 9px;
+  cursor: pointer;
+}
+@media screen and (max-width: 425px) {
+  .my-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .simila {
+    height: 109% !important;
+  }
+  .h-100 {
+    height: 104% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .my-stats {
+    max-width: 390px; /* or any other suitable width */
+    margin: 0 auto;
+  }
+  .prog {
+    margin-right: -20px !important;
+  }
+}
+
+.my-footer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  /* background: #ffffff; */
+  box-shadow: 0px -28px 24px -24px rgba(0, 0, 0, 0.25);
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  gap: 8px;
+
+  width: 100%;
+  max-width: 420px;
+  height: 54px;
+  margin: 0 auto;
+  margin-top: 30px;
+
+  background: #e9e9e9;
+  box-shadow: inset 0px 3px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 60px;
+}
+
+.button {
+  flex: 1;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background: transparent;
+  border: none;
+  border-radius: 60px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (min-width: 360px) {
+  .button-container {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 480px) {
+  .button-container {
+    max-width: 420px;
+  }
+}
+
+@media (min-width: 768px) {
+  .button-container {
+    max-width: 640px;
+  }
+}
+
+.button.active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 1440px) {
+  .my-about {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    margin-top: -26px; /* half of the height */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cm {
+    transform: translateX(-240%);
+  }
+  .kg {
+    transform: translateX(-240%);
+  }
+  .ability {
+    transform: translateX(-100%);
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .cm {
+    transform: translateX(-391%);
+  }
+  .kg {
+    transform: translateX(-391%);
+  }
+  .ability {
+    transform: translateX(-165%);
+  }
+}
